@@ -1,0 +1,52 @@
+/* General styling for the Kanban board */
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  /* Adds spacing between columns */
+  padding: 20px;
+  overflow-x: auto;
+  /* Makes the columns scrollable horizontally if too many */
+}
+
+/* Styling for each Kanban column */
+.kanban-column {
+  background-color: #f4f5f7;
+  /* Light background to match the board in the image */
+  border-radius: 8px;
+  width: 250px;
+  /* Updated width to match the column size in the image */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Adds a subtle shadow */
+}
+
+.kanban-column h2 {
+  text-align: left;
+  /* Align the header to the left */
+  font-size: 18px;
+  /* Make the header font larger */
+  color: #333;
+  /* Darker font color */
+  margin-bottom: 10px;
+  /* Adds space between the header and the cards */
+  display: flex;
+  justify-content: space-between;
+  /* To accommodate the task count */
+}
+
+.kanban-column h2 span {
+  background-color: #e1e4e8;
+  /* Add background to the task count */
+  padding: 3px 7px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #555;
+}
+
+.kanban-cards {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Adds space between the cards */
+}
